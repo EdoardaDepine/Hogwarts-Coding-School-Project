@@ -1,6 +1,7 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-around;
 }
 
 #img-logo-header {
@@ -14,7 +15,7 @@ h1 {
   text-align: center;
 }
 
-form #login {
+#login {
   display: flex;
   float: right;
 }
@@ -23,8 +24,19 @@ main {
   display: flex;
 }
 
-form #evaluation-form {
+#evaluation-form {
   display: flex;
-  width: 675px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.camps {
+  display: flex;
   flex-direction: column;
+}
+
+#img-logo-body {
+  height: 500px;
+  float: right;
+  display: flex;
 }

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
   <title>Hogwarts Coding School</title>
 </head>
 
@@ -16,13 +17,11 @@
 
   <form id="login" class="header">
     <fieldset class="form-camps-login">
-      <label for="email">Email</label>
-      <input name="email" id="name" type="email" placeholder="Email">
+      <input name="email" id="input-name-login" type="email" placeholder="Email">
     </fieldset>
 
     <fieldset class="form-camps-login">
-      <label for="password">Senha</label>
-      <input name="password" id="password" type="text" placeholder="Senha">
+      <input name="password" id="input-password-login" type="text" placeholder="Senha">
     </fieldset>
 
     <fieldset class="form-camps-login">
@@ -33,7 +32,25 @@
 
 <main>
   <form id="evaluation-form">
-    <img src="logo-principal-removebg-preview.png" title="Logo de Hogwarts" id="img-logo-body">
+    <div class="camps">
+      <fieldset class="form-camps-evaluation">
+        <input name="name" id="input-name" type="text" placeholder="Nome">
+      </fieldset>
+
+      <fieldset class="form-camps-evaluation">
+        <input name="lastname" id="input-lastname" type="text" placeholder="Sobrenome">
+      </fieldset>
+
+      <fieldset class="form-camps-evaluation">
+        <input name="email" id="input-email" type="email" placeholder="Email">
+      </fieldset>
+    </div>
+
+    <fieldset class="form-camps-evaluation">
+      <img src="logo-principal-removebg-preview.png" title="Logo de Hogwarts" id="img-logo-body">
+    </fieldset>
+
+    <select id="house"></select>
   </form>
 </main>
 
