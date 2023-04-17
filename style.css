@@ -45,6 +45,16 @@ main {
   flex-direction: row;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-family {
+  flex-direction: column;
+  display: flex;
+}
+
 #img-logo-body {
   height: 500px;
   float: right;

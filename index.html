@@ -30,54 +30,117 @@
   </form>
 </header>
 
-<main>
-  <form id="evaluation-form">
-
-    <div class="camps">
-      <div class="division-1">
-        <fieldset class="form-camps-evaluation">
-          <input name="name" id="input-name" type="text" placeholder="Nome">
-        </fieldset>
-
-        <fieldset class="form-camps-evaluation">
-          <input name="lastname" id="input-lastname" type="text" placeholder="Sobrenome">
-        </fieldset>
-      </div>
-
-      <div class="divisison-2">
-        <fieldset class="form-camps-evaluation">
-          <input name="email" id="input-email" type="email" placeholder="Email">
-        </fieldset>
-
-        <fieldset class="form-camps-evaluation">
-          <label>Casa:</label>
-          <select id="house">
-            <option value="Gitnória" id="gitnoria-house" selected>Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-          </select>
-        </fieldset>
-      </div>
-
-      <fieldset class="form-camps-evaluation">
-        <label id="label-family">Qual sua família?</label>
-        <input type="radio" name="family" value="Frontend">
-        <input type="radio" name="family" value="Backend">
-        <input type="radio" name="family" value="FullStack">
-      </fieldset>
-    </div>
-
-
-    <fieldset class="form-camps-evaluation">
-      <img src="logo-principal-removebg-preview.png" title="Logo de Hogwarts" id="img-logo-body">
-    </fieldset>
-  </form>
-</main>
-
-
-
 <body>
+
+  <main>
+    <form id="evaluation-form">
+
+      <div class="camps">
+
+        <div class="camps-evaluation division-1">
+          <input name="name" id="input-name" type="text" placeholder="Nome">
+          <input name="lastname" id="input-lastname" type="text" placeholder="Sobrenome">
+        </div>
+
+        <div class="camps-evaluation divisison-2">
+          <fieldset class="camps-evaluation">
+            <input name="email" id="input-email" type="email" placeholder="Email">
+          </fieldset>
+
+          <fieldset class="camps-evaluation">
+            <label>Casa:</label>
+            <select id="house">
+              <option value="Gitnória" id="gitnoria-house" selected>Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </fieldset>
+        </div>
+
+        <fieldset class="camps-evaluation input-family">
+          <label id="label-family">Qual sua família?</label>
+          <div class="inputs-family">
+            <label>
+              <input type="radio" name="family" value="Frontend">Frontend
+            </label>
+            <label>
+              <input type="radio" name="family" value="Backend">Backend
+            </label>
+            <label>
+              <input type="radio" name="family" value="FullStack">FullStack
+            </label>
+          </div>
+        </fieldset>
+
+
+        <fieldset class="camps-evaluation input-content">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="inputs-content">
+            <label>
+              <input type="checkbox" value="HoFs">HoFs
+            </label>
+            <label>
+              <input type="checkbox" value="Jest">Jest
+            </label>
+            <label>
+              <input type="checkbox" value="Promisses">Promisses
+            </label>
+            <label>
+              <input type="checkbox" value="React">React
+            </label>
+            <label>
+              <input type="checkbox" value="SQL">SQL
+            </label>
+            <label>
+              <input type="checkbox" value="Python">Python
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="camps-evaluation input-rate">
+          <label id="label-rate">Como você avalia a Hogwarts Coding School?</label>
+          <div class="inputs-rate">
+            <label>
+              <input type="radio" name="rate" value="1">1
+            </label>
+            <label>
+              <input type="radio" name="rate" value="2">2
+            </label>
+            <label>
+              <input type="radio" name="rate" value="3">3
+            </label>
+            <label>
+              <input type="radio" name="rate" value="4">4
+            </label>
+            <label>
+              <input type="radio" name="rate" value="5">5
+            </label>
+            <label>
+              <input type="radio" name="rate" value="6">6
+            </label>
+            <label>
+              <input type="radio" name="rate" value="7">7
+            </label>
+            <label>
+              <input type="radio" name="rate" value="8">8
+            </label>
+            <label>
+              <input type="radio" name="rate" value="9">9
+            </label>
+            <label>
+              <input type="radio" name="rate" value="10">10
+            </label>
+          </div>
+        </fieldset>
+
+      </div>
+
+      <fieldset class="camps-evaluation" id="img">
+        <img src="logo-principal-removebg-preview.png" title="Logo de Hogwarts" id="img-logo-body">
+      </fieldset>
+    </form>
+  </main>
 
 
   <script src="script.js"></script>
