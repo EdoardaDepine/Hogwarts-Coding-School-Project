@@ -29,3 +29,21 @@ const counter = document.querySelector("#counter");
 textArea.addEventListener("keyup", () => {
   counter.innerText = 500 - textArea.value.length;
 });
+
+const buttonSubmit = document.querySelector("#submit-btn");
+
+buttonSubmit.addEventListener("click", (event) => {
+  const form = document.querySelector("#evaluation-form");
+
+  const name = document.querySelector("#input-name").value;
+  const lastName = document.querySelector("#input-lastname").value;
+  const email = document.querySelector("#input-email").value;
+  const selectHouse = document.querySelector("#house").value;
+
+  form.innerHTML = `
+   <div>Nome:${name}</div>
+   <div>Sobrenome:${lastName}</div>
+   <div>Email:${email}</div>
+   <div>Casa:${selectHouse}</div>
+`;
+});
