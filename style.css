@@ -8,3 +8,23 @@
   width: 100px;
   height: 100px;
 }
+
+h1 {
+  display: flex;
+  text-align: center;
+}
+
+form #login {
+  display: flex;
+  float: right;
+}
+
+main {
+  display: flex;
+}
+
+form #evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
