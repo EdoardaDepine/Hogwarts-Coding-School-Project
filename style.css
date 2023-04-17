@@ -35,6 +35,16 @@ main {
   flex-direction: column;
 }
 
+.division-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.divisison-2 {
+  display: flex;
+  flex-direction: row;
+}
+
 #img-logo-body {
   height: 500px;
   float: right;

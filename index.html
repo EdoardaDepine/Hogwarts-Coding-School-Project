@@ -32,25 +32,46 @@
 
 <main>
   <form id="evaluation-form">
+
     <div class="camps">
-      <fieldset class="form-camps-evaluation">
-        <input name="name" id="input-name" type="text" placeholder="Nome">
-      </fieldset>
+      <div class="division-1">
+        <fieldset class="form-camps-evaluation">
+          <input name="name" id="input-name" type="text" placeholder="Nome">
+        </fieldset>
+
+        <fieldset class="form-camps-evaluation">
+          <input name="lastname" id="input-lastname" type="text" placeholder="Sobrenome">
+        </fieldset>
+      </div>
+
+      <div class="divisison-2">
+        <fieldset class="form-camps-evaluation">
+          <input name="email" id="input-email" type="email" placeholder="Email">
+        </fieldset>
+
+        <fieldset class="form-camps-evaluation">
+          <label>Casa:</label>
+          <select id="house">
+            <option value="Gitnória" id="gitnoria-house" selected>Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </fieldset>
+      </div>
 
       <fieldset class="form-camps-evaluation">
-        <input name="lastname" id="input-lastname" type="text" placeholder="Sobrenome">
-      </fieldset>
-
-      <fieldset class="form-camps-evaluation">
-        <input name="email" id="input-email" type="email" placeholder="Email">
+        <label id="label-family">Qual sua família?</label>
+        <input type="radio" name="family" value="Frontend">
+        <input type="radio" name="family" value="Backend">
+        <input type="radio" name="family" value="FullStack">
       </fieldset>
     </div>
+
 
     <fieldset class="form-camps-evaluation">
       <img src="logo-principal-removebg-preview.png" title="Logo de Hogwarts" id="img-logo-body">
     </fieldset>
-
-    <select id="house"></select>
   </form>
 </main>
 
