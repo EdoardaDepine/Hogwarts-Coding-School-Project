@@ -52,24 +52,41 @@
   font-weight: bold;
 }
 
-main {
-  display: flex;
-}
 
 body {
   background-color: rgba(240, 240, 237, 0.791);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+
+.subtitle {
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 #evaluation-form {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content:space-evenly;
   margin-top: 150px;
 }
 
 .camps {
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 
 #input-name, #input-lastname, #input-email, #house {
@@ -150,7 +167,8 @@ body {
 .textarea-text {
   display: flex;
   flex-direction: column;
-}
+  gap: 20px;
+ } 
 
 .input-agreement {
   padding-top: 50px;
@@ -175,10 +193,26 @@ body {
   font-size: 15px;
   color:white;
   font-weight: bold;
-}
-
+  margin-bottom: 60px;
+ }
+ 
 #img-logo-body {
   height: 500px;
   float: right;
   display: flex;
 }
+
+.footer {
+  display: flex;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family:'Times New Roman', Times, serif;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 3vh;
+ }
+ 
