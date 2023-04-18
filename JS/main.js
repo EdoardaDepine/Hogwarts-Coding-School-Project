@@ -10,14 +10,17 @@ buttonSubmit.addEventListener("click", (event) => {
   const selectFamily = verifyFamily();
   const selectContents = verifyContents();
 
-  const saveLS = (form.innerHTML = `
-   <div>Nome:${name}</div>
-   <div>Sobrenome:${lastName}</div>
-   <div>Email:${email}</div>
-   <div>Casa:${selectHouse}</div>
-   <div>Família:${selectFamily}</div>
-   <div>Conteúdos>${selectContents}</div>
+  const saveLocalStorage = (form.innerHTML = ` {
+   Nome:${name},
+   Sobrenome:${lastName},
+   Email:${email},
+   Casa:${selectHouse},
+   Família:${selectFamily},
+   Conteúdos>${selectContents}
+  }
 `);
+
+  localStorage.setItem("register", JSON.stringify(saveLocalStorage));
 });
 
 function verifyFamily() {
