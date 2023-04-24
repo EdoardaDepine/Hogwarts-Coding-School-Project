@@ -19,8 +19,7 @@ buttonSubmit.addEventListener("click", (event) => {
    Conteúdos>${selectContents}
   }
 `);
-
-  localStorage.setItem("register", JSON.stringify(saveLocalStorage));
+  saveLocalStorageRegister(saveLocalStorage);
 });
 
 function verifyFamily() {
@@ -48,4 +47,11 @@ function verifyContents() {
     });
   });
   console.log(arr);
+}
+
+function saveLocalStorageRegister(register) {
+  if (localStorage.getItem("register") === null) {
+    localStorage.setItem("register", JSON.stringify(register));
+  } else {
+  }
 }
