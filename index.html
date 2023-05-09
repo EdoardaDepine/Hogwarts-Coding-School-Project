@@ -2,185 +2,184 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-  <title>Hogwarts Coding School</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Hogwarts Coding School</title>
 </head>
 
 
 <body>
-  <header class="header">
-    <img src="png-transparent-hogwarts-hd-logo-removebg-preview.png" title="Logo de Hogwarts - cabeçalho"
-      id="img-logo-header" class="header">
-    <h1 id="title" class="header">Hogwarts Coding School</h1>
+    <header class="header">
+        <img src="png-transparent-hogwarts-hd-logo-removebg-preview.png" title="Logo de Hogwarts - cabeçalho" id="img-logo-header" class="header">
+        <h1 id="title" class="header">Hogwarts Coding School</h1>
 
-    <form id="login-camps" class="header">
-      <fieldset class="form-camps-login">
-        <input name="email" class="input-login" id="input-name-login" type="email" placeholder="Email">
-      </fieldset>
+        <form id="login-camps" class="header">
+            <fieldset class="form-camps-login">
+                <input name="email" class="input-login" id="input-name-login" type="email" placeholder="Email">
+            </fieldset>
 
-      <fieldset class="form-camps-login">
-        <input name="password" class="input-login" id="input-password-login" type="text" placeholder="Senha">
-      </fieldset>
+            <fieldset class="form-camps-login">
+                <input name="password" class="input-login" id="input-password-login" type="text" placeholder="Senha">
+            </fieldset>
 
-      <fieldset class="form-camps-login">
-        <button id="login">Entrar</button>
-      </fieldset>
-    </form>
-  </header>
+            <fieldset class="form-camps-login">
+                <button id="login">Entrar</button>
+            </fieldset>
+        </form>
+    </header>
 
-  <main>
-    <div class="container">
-      <form id="evaluation-form">
+    <main>
+        <div class="container">
+            <form id="evaluation-form">
 
-        <div class="camps">
-          <h2 class="subtitle">Formulário de Avaliação:</h2>
+                <div class="camps">
+                    <h2 class="subtitle">Formulário de Avaliação:</h2>
 
-          <div>
-            <div class="camps-evaluation division-1">
-              <input name="name" id="input-name" type="text" placeholder="Nome">
-              <input name="lastname" id="input-lastname" type="text" placeholder="Sobrenome">
-            </div>
+                    <div>
+                        <div class="camps-evaluation division-1">
+                            <input name="name" id="input-name" type="text" placeholder="Nome">
+                            <input name="lastname" id="input-lastname" type="text" placeholder="Sobrenome">
+                        </div>
 
-            <div class="camps-evaluation divisison-2">
-              <fieldset class="camps-evaluation">
-                <input name="email" id="input-email" type="email" placeholder="Email">
-              </fieldset>
+                        <div class="camps-evaluation divisison-2">
+                            <fieldset class="camps-evaluation">
+                                <input name="email" id="input-email" type="email" placeholder="Email">
+                            </fieldset>
 
-              <fieldset class="camps-evaluation">
-                <label>Casa:</label>
-                <select id="house">
+                            <fieldset class="camps-evaluation">
+                                <label>Casa:</label>
+                                <select id="house">
                   <option value="Gitnória" id="gitnoria-house option" selected>Gitnória</option>
                   <option value="Reactpuff" id="reactpuff-house option">Reactpuff</option>
                   <option value="Corvinode" id="corvinode-house option">Corvinode</option>
                   <option value="Pytherina" id="pytherina-house option">Pytherina</option>
                 </select>
-              </fieldset>
-            </div>
+                            </fieldset>
+                        </div>
 
-            <hr width="100%">
+                        <hr width="100%">
 
-            <div class="camps-evaluation division-3">
-              <fieldset class="input-family">
-                <label id="label-family">Qual sua família?</label>
-                <div class="inputs-family">
-                  <label>
+                        <div class="camps-evaluation division-3">
+                            <fieldset class="input-family">
+                                <label id="label-family">Qual sua família?</label>
+                                <div class="inputs-family">
+                                    <label>
                     <input type="radio" name="family" value="Frontend" class="radio-skil">Família Frontend
                   </label>
-                  <label>
+                                    <label>
                     <input type="radio" name="family" value="Backend" class="radio-skil">Família Backend
                   </label>
-                  <label>
+                                    <label>
                     <input type="radio" name="family" value="FullStack" class="radio-skil">Família FullStack
                   </label>
-                </div>
-              </fieldset>
+                                </div>
+                            </fieldset>
 
-              <fieldset class="camps-evaluation input-content">
-                <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                <div class="inputs-content">
-                  <label>
-                    <input type="checkbox" value="HoFs" class="check-content">HoFs
+                            <fieldset class="camps-evaluation input-content">
+                                <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                                <div class="inputs-content">
+                                    <label>
+                    <input type="checkbox" name="check-content"  value="HoFs" class="check-content">HoFs
                   </label>
-                  <label>
-                    <input type="checkbox" value="Jest" class="check-content">Jest
+                                    <label>
+                    <input type="checkbox" name="check-content" value="Jest" class="check-content">Jest
                   </label>
-                  <label>
-                    <input type="checkbox" value="Promisses" class="check-content">Promisses
+                                    <label>
+                    <input type="checkbox" name="check-content" value="Promisses" class="check-content">Promisses
                   </label>
-                  <label>
-                    <input type="checkbox" value="React" class="check-content">React
+                                    <label>
+                    <input type="checkbox" name="check-content" value="React" class="check-content">React
                   </label>
-                  <label>
-                    <input type="checkbox" value="SQL" class="check-content">SQL
+                                    <label>
+                    <input type="checkbox" name="check-content"  value="SQL" class="check-content">SQL
                   </label>
-                  <label>
-                    <input type="checkbox" value="Python" class="check-content">Python
+                                    <label>
+                    <input type="checkbox" name="check-content" value="Python" class="check-content">Python
                   </label>
-                </div>
-              </fieldset>
-            </div>
+                                </div>
+                            </fieldset>
+                        </div>
 
-            <hr width="100%">
+                        <hr width="100%">
 
-            <fieldset class="camps-evaluation input-rate">
-              <label id="label-rate">Como você avalia a Hogwarts Coding School?</label>
-              <div class="inputs-rate">
-                <label>
+                        <fieldset class="camps-evaluation input-rate">
+                            <label id="label-rate">Como você avalia a Hogwarts Coding School?</label>
+                            <div class="inputs-rate">
+                                <label>
                   <input type="radio" name="rate" value="1">1
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="2">2
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="3">3
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="4">4
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="5">5
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="6">6
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="7">7
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="8">8
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="9">9
                 </label>
-                <label>
+                                <label>
                   <input type="radio" name="rate" value="10">10
                 </label>
-              </div>
-            </fieldset>
+                            </div>
+                        </fieldset>
 
-            <fieldset class="camps-evaluation textarea-text">
-              <label class="textarea">Deixe seu comentário:</label>
-              <textarea id="textarea" maxlength="500"></textarea>
-              <p id="counter">500</p>
-            </fieldset>
+                        <fieldset class="camps-evaluation textarea-text">
+                            <label class="textarea">Deixe seu comentário:</label>
+                            <textarea id="textarea" maxlength="500"></textarea>
+                            <p id="counter">500</p>
+                        </fieldset>
 
 
-            <hr width="100%">
+                        <hr width="100%">
 
-            <fieldset class="camps-evaluation input-agreement">
-              <label id="label-infos">Você concorda com o uso das informações acima?
+                        <fieldset class="camps-evaluation input-agreement">
+                            <label id="label-infos">Você concorda com o uso das informações acima?
                 <input type="checkbox" id="agreement" id="checkbox">
               </label>
-            </fieldset>
+                        </fieldset>
 
-            <fieldset class="camps-evaluation button">
-              <button type="submit" id="submit-btn">Enviar</button>
-            </fieldset>
-          </div>
+                        <fieldset class="camps-evaluation button">
+                            <button type="submit" id="submit-btn">Enviar</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+
+                <fieldset id="img">
+                    <img src="logo-principal-removebg-preview.png" title="Logo de Hogwarts" id="img-logo-body">
+                </fieldset>
+            </form>
+
         </div>
+    </main>
 
+    <footer class="footer">
+        <div>
+            Todos os direitos reservados à Hogwarts Coding School ©
+        </div>
+    </footer>
 
-        <fieldset id="img">
-          <img src="logo-principal-removebg-preview.png" title="Logo de Hogwarts" id="img-logo-body">
-        </fieldset>
-      </form>
-
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div>
-      Todos os direitos reservados à Hogwarts Coding School ©
-    </div>
-  </footer>
-
-  <script src="/JS/main.js"></script>
-  <script src="/JS/function-button-login.js"></script>
-  <script src="/JS/function-texarea.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/function-button-login.js"></script>
+    <script src="/JS/function-texarea.js"></script>
 </body>
 
 </html>

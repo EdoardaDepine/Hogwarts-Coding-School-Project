@@ -1,57 +1,87 @@
 const buttonSubmit = document.querySelector("#submit-btn");
 
 buttonSubmit.addEventListener("click", (event) => {
-  const form = document.querySelector("#evaluation-form");
+    event.preventDefault();
+    const form = document.querySelector("#evaluation-form");
 
-  const name = document.querySelector("#input-name").value;
-  const lastName = document.querySelector("#input-lastname").value;
-  const email = document.querySelector("#input-email").value;
-  const selectHouse = document.querySelector("#house").value;
-  const selectFamily = verifyFamily();
-  const selectContents = verifyContents();
+    const name = document.querySelector("#input-name").value;
+    const lastName = document.querySelector("#input-lastname").value;
+    const email = document.querySelector("#input-email").value;
+    const selectHouse = document.querySelector("#house").value;
+    const selectFamily = verifyFamily();
+    const selectContents = verifyContents();
+    const selectRate = verifyRate();
+    const textAreaComent = verifyTextArea();
 
-  const saveLocalStorage = (form.innerHTML = ` {
-   Nome:${name},
-   Sobrenome:${lastName},
-   Email:${email},
-   Casa:${selectHouse},
-   Família:${selectFamily},
-   Conteúdos>${selectContents}
-  }
-`);
-  saveLocalStorageRegister(saveLocalStorage);
+    const obj = {
+        Nome: name,
+        Sobrenome: lastName,
+        Email: email,
+        Casa: selectHouse,
+        Família: selectFamily,
+        Conteúdos: selectContents,
+        Nota: selectRate,
+        Comentários: textAreaComent,
+    };
+
+    setStudentLocalStorage(obj);
+
+    return (form.innerHTML = `[
+    Nome: ${name},
+    Sobrenome: ${lastName},
+    Email: ${email},
+    Casa: ${selectHouse},
+    Família: ${selectFamily},
+    Conteúdos: ${selectContents},
+    Nota: ${selectRate},
+    Comentários: ${textAreaComent},
+  ]
+  `);
 });
 
 function verifyFamily() {
-  const inputsFamily = document.querySelectorAll(".radio-skil");
+    const inputsFamily = document.getElementsByName("family");
 
-  inputsFamily.forEach((input) => {
-    input.addEventListener("click", (event) => {
-      if (event.target.checked) {
-        return event.target.value;
-      }
-    });
-  });
-  //console.log(inputsFamily);
+    for (let i = 0; i < inputsFamily.length; i++) {
+        const input = inputsFamily[i];
+        if (input.checked) return input.value;
+    }
 }
 
 function verifyContents() {
-  const checkBoxes = document.querySelectorAll(".check-content");
-  const arr = [];
-
-  checkBoxes.forEach((check) => {
-    check.addEventListener("click", (event) => {
-      if (event.checked) {
-        return arr.push[event.target.value];
-      }
-    });
-  });
-  console.log(arr);
+    const checkBoxesNodeList = document.getElementsByName("check-content");
+    const checkBoxesContent = Array.from(checkBoxesNodeList);
+    const checkedList = checkBoxesContent.filter((checkBox) => checkBox.checked);
+    return checkedList.map((check) => check.value);
 }
 
-function saveLocalStorageRegister(register) {
-  if (localStorage.getItem("register") === null) {
-    localStorage.setItem("register", JSON.stringify(register));
-  } else {
-  }
+function verifyRate() {
+    const inputsRate = document.getElementsByName("rate");
+
+    for (let i = 0; i < inputsRate.length; i++) {
+        const element = inputsRate[i];
+        if (element.checked) {
+            return element.value;
+        }
+    }
+}
+
+function verifyTextArea() {
+    const textArea = document.querySelector("#textarea");
+    return textArea.value;
+}
+
+function getStudentLocalStorage() {
+    return JSON.parse(localStorage.getItem("student")) || [];
+}
+
+function setStudentLocalStorage(student) {
+    if (localStorage.hasOwnProperty("student")) {
+        localStorage.setItem(
+            "student",
+            JSON.stringify([...getStudentLocalStorage(), student])
+        );
+    } else {
+        localStorage.setItem("student", JSON.stringify([student]));
+    }
 }
